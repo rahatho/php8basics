@@ -1,12 +1,9 @@
 <?php
-    error_reporting(E_ALL);
-    ini_set("diplay_errors",1);
-    
-    $title = "Beginning PHP 8 & MySQL";
-    $content = "Here is the main content for this page by php";
+$header = include_once("header.php");
+$content = include_once("content.php");
+$footer = include_once("footer.php");
 
-    $html = "
-    <!DOCTYPE html>
+return "<!DOCTYPE html>
     <html lang='en'><?php
     <head>
         <meta charset='UTF-8'>
@@ -17,9 +14,8 @@
         <link rel= 'stylesheet' href= 'css/styles.css?v=1.0'>
     </head>
     <body>
-      $content  
+      $header
+      $content 
+      $footer 
     </body>
     </html>";
-    
-    echo $html;
- 

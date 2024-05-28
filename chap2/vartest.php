@@ -1,4 +1,3 @@
-<code>
 <?php
 // Turn off all error reporting
 //error_reporting(0);
@@ -30,5 +29,3 @@ echo "<p> variable test</p>";
 $color = "blue";
 $item = "pants";
 echo "Today I am using $item which happen to the color $color";
-?>
-</code>
